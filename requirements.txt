@@ -11,3 +11,5 @@ uvicorn==0.32.0
 python-multipart==0.0.16
 python-dotenv
 yt-dlp
+pandas
+tqdm
