@@ -1,2 +1,4 @@
 raw_data/
 .env
+local_directory/
+*.egg-info/
