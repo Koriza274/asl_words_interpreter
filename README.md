@@ -40,15 +40,10 @@ Alternatively, you can use the make install command to install all the necessary
 ### Installation
 
 #### 1. Clone the Repository
-For back-end:
+
 ```bash
-git clone https://github.com/Koriza274/sign_language_interpreter.git
-cd sign_language_interpreter
-```
-For front-end:
-```bash
-git clone https://github.com/Koriza274/sign_language_interpreter_front-end.git
-cd sign_language_interpreter
+git clone https://github.com/Koriza274/asl_words_interpreter.git
+cd asl_words_interpreter
 ```
 
 #### 2. Install Python Dependencies
@@ -78,7 +73,7 @@ sudo apt-get install -y $(cat packages.txt)
 Start the FastAPI backend service to manage gesture recognition.
 
 ```bash
-uvicorn api:app --reload
+uvicorn api_file:app --reload
 ```
 
 #### 2. Frontend with Streamlit
@@ -86,12 +81,12 @@ uvicorn api:app --reload
 Run the Streamlit app to launch the web-based interface.
 
 ```bash
-streamlit run front_ASL_1.py
+streamlit run word_prediction_app.py
 ```
 
 #### 3. Configuration
 
-The application uses environment variables. You may configure these in a `.env` file. Refer to `params.py` for possible parameters that may be required.
+The application uses environment variables. You may configure these in a `.env` file. 
 
 ---
 
